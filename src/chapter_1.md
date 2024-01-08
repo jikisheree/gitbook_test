@@ -2,3 +2,5 @@
 
 Hello world
 
+![example image](images/dog.jpg)
+
