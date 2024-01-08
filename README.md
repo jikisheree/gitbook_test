@@ -1,6 +1,5 @@
-Read on this https://rust-lang.github.io/mdBook/index.html
+Basically for Windows
+1. Run `./mdbook serve`
 
-
-Basically
-1. Download `mdbook`
-2. Run `mdbook serve`
+For other OS.
+More infohttps://rust-lang.github.io/mdBook/index.html
