@@ -3,4 +3,5 @@ authors = ["Tanat"]
 language = "en"
 multilingual = false
 src = "src"
-title = "PettySync"
+title = "PettySync Report"
+description = "PettySync's online report."
