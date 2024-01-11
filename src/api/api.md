@@ -344,8 +344,6 @@ from AWS.
 
 ![fan-in](../images/many-to-one-fan-in.png)
 
-- Send `at least once`
-
 Collar will have this topic schema `collar/{cat | dog}/{deviceId}` 
 e.g. `collar/cat/fed38152-6595-48c1-aaea-ebc0d937a19d` and the payload will look like this
 
