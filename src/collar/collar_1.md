@@ -10,8 +10,6 @@ We want a small box that will be attached to the dog or cat collar. So
 - Every sensors will be integrated into the box. (We need to build a custom PCB)
 - Waterproof
 
-<hr>
-
 ## Sensor Specs
 
 ### Heart Rate
@@ -39,7 +37,10 @@ From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/
 - Optical Receiver Chip APDS-9008
 - Electrical Signal Amplifier
 
+<br>
 
+>
+<!-- ^ This is for end line beautifully. -->
 
 ### GPS / LTE
 
@@ -47,30 +48,81 @@ From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/
 
 SIM7080G NB-IoT / Cat-M / GNSS (This can also provide GPS)
 
+<br>
+
+>
+<!-- ^ This is for end line beautifully. -->
 
 ### Microphone
 
-(Bitrate, Sampling rate?)
+For recording pet's voice then send to ML server to classified pet's emotional.
 
+**Voice Sound Detection Sensor Module**
+
+<p style="text-align: center;"><img src="../images/voice-trg.jpg" width="250"></p>
+
+This is for triggering the voice recorder module for recording pet's voice, Since We don't want to record all the time.
+
+**Fermion: Voice Recorder Module**
+
+<p style="text-align: center;"><img src="../images/voice-mod.jpg" width="250"></p>
+
+This is the voice recorder module for recording pet's voice.
+
+**Specs**
+
+- Sampling Rate: 48kbs
+- Frequency Response: 20-20KHz
+- Storage: 16MB
+- Support about 40 minutes voice recording
+
+Interesting Link
 - High Sensitive Microphone Module
 - Fermion: Voice Recorder Module 
 - [Electro-magnetic microphone (MEM)](https://youtu.be/wQkrD2D-XFA?si=1bjIS1xrrbElS7r1)
-
-Interesting Link
 - https://academic.oup.com/cz/article/67/2/165/5892256
 - https://www.lsu.edu/deafness/HearingRange.html
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7000907/#:~:text=Cat%20vocalizes%20to%20communicate%20with,contains%20more%20types%20of%20vocalizations.
 - https://www.quora.com/What-is-the-vocal-range-of-cats-by-frequency
 
+<br>
+
+>
+<!-- ^ This is for end line beautifully. -->
+
+### Accelerometer
+For tracking pet's activity, movement.
+
+**Accelerometer/Gyro Module (MPU6050)**
+
+<p style="text-align: center;"><img src="../images/mpu6050.jpg" width="250"></p>
+
+**Specs**
+
+- 3-axis accelerometer (x, y, z)
+- 3-axis gyroscope (x, y, z)
+- In-built Temperature sensor
+
+<br>
+
+>
+<!-- ^ This is for end line beautifully. -->
 
 ### Processor
+
+**Raspberry Pi Pico**
+
 ![](../images/pico.jpg)
 
-Raspberry Pico could be our initial processor for the prototype. (why??)
+The Raspberry Pi Pico is a microcontroller board, and its features are tailored towards specific use cases where a compact, low-cost, and power-efficient solution is required.
 
 [Brief Overview](https://datasheets.raspberrypi.com/pico/pico-product-brief.pdf), 
 [Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 
+<br>
+
+>
+<!-- ^ This is for end line beautifully. -->
 
 ### Battery
 
@@ -84,16 +136,46 @@ Raspberry Pico could be our initial processor for the prototype. (why??)
 
 **The battery model we are interested in**
 
-![](../images/lipo-bat.jpg)
+<p style="text-align: center;"><img src="../images/lipo-bat.jpg" width="250"></p>
+
 - **YDL 3.7V 1000mAh 503450 Lipo Battery Rechargeable Lithium Polymer x 2**
     - Voltage: DC 3.7V; Capacity: 1000mAh
     - Material: Lithium Polymer; Net Weight: 22g
     - Size: 50 x 34 x 6mm / 1.97" x 1.34" x 0.24" (LWT)
 
-- Power assumption
-    > todo!()
+**Power assumption**
 
-> *This batteries can supply our collar's sensors for at least 24hrs.*
+- Raspberry Pi Pico consume 90mA (Active)
+- Accelerometer/Gyro Module consume 5mA (Active)
+- Voice Sound Detection Sensor Module consume 10mA (Active)
+- Voice Recorder Module consume 35mA (Active)
+- SIM7080G NB-IoT / Cat-M / GNSS consume 350mA (Active)
+- PPG Heart Rate Sensor consume 5mA (Active)
+- Sleep mode consume 100mA (Sleep)
+
+\\( P_{\text{active}} = 90 + 5 + 10 + 35 + 350 + 5 = 495 \ \text{mA} \\) and \\( P_{\text{sleep}} = 100 \ \text{mA} \\)
+
+\\( T_{\text{active}} = 0.3 \\) (30% active time) and \\( T_{\text{sleep}} = 0.7 \\) (70% sleep time)
+
+\\[ \text{Average Power Consumption} = (P_{\text{active}} \times T_{\text{active}}) + (P_{\text{sleep}} \times T_{\text{sleep}}) \\]
+\\[ \text{Average Power Consumption} = (495 \ \text{mA} \times 0.3) + (100 \ \text{mA} \times 0.7) \\]
+
+Now, calculate the battery life:
+
+\\[ \text{Battery Life (hours)} = \frac{C_{\text{battery}}}{\text{Average Power Consumption}} \\]
+
+Substitute the given values and adjust for two batteries:
+
+\\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{(0.3 \times 495 \ \text{mA} + 0.7 \times 100 \text{mA})} \\]
+
+\\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{218 \ \text{mA}} \approx 10 \ \text{hours} \\]
+
+> *ทำไงดี แบตแค่ 2 ก้อนไม่น่ารอด Which include of power saving mode these batteries can supply our collar's sensors for at least 24hrs.*
+
+<br>
+
+>
+<!-- ^ This is for end line beautifully. -->
 
 ## Software Requirements 
 - Can use MQTT to send the data to the server every 5 minutes. (QOS 1, at least once)
