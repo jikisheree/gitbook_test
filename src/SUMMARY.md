@@ -23,3 +23,6 @@
 # Collar
 - [Collar Design](./collar/collar_1.md)
     - [Sensors Detail](./collar/collar_sensor.md)
+
+# API 
+- [API Design](./api/api.md)
