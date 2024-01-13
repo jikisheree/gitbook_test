@@ -37,6 +37,13 @@ SIM7080G NB-IoT / Cat-M / GNSS (This can also provide GPS)
 - Fermion: Voice Recorder Module 
 - [Electro-magnetic microphone (MEM)](https://youtu.be/wQkrD2D-XFA?si=1bjIS1xrrbElS7r1)
 
+Interesting Link
+- https://academic.oup.com/cz/article/67/2/165/5892256
+- https://www.lsu.edu/deafness/HearingRange.html
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7000907/#:~:text=Cat%20vocalizes%20to%20communicate%20with,contains%20more%20types%20of%20vocalizations.
+- https://www.quora.com/What-is-the-vocal-range-of-cats-by-frequency
+
+
 #### Processor
 ![](../images/pico.jpg)
 
