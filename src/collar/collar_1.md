@@ -10,26 +10,45 @@ We want a small box that will be attached to the dog or cat collar. So
 - Every sensors will be integrated into the box. (We need to build a custom PCB)
 - Waterproof
 
+<hr>
+
 ## Sensor Specs
 
-#### Heart Rate
-From this [article](https://neurosky.com/2015/01/ecg-vs-ppg-for-heart-rate-monitoring-which-is-best/)
-- PPG (photoplethysmography) sensor use a light-based technology to sense the rate of blood flow.
-- ECG (electrocardiography) sensor measure the electric signal generated from the heart.
+### Heart Rate
+From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/2015/01/ecg-vs-ppg-for-heart-rate-monitoring-which-is-best/)
+- **PPG (photoplethysmography) use a light-based technology to sense the rate of blood flow.**
+- ECG (electrocardiography) measure the electric signal generated from the heart.
 
-Maybe we can use both and determine which is more correct. 
-(need more explanation, how to deal with dog/cat fur)
+#### **Dealing with Dog and Cat fur**
 
-- Gravity Heart Rate Monitor Sensor (PPG)
+**from this** [**Research | IoT for Living Sheep.**](https://www.researchgate.net/publication/332477439_WSMS_Wearable_Stress_Monitoring_System_based_on_IoT_Multi-Sensor_Platform_for_Living_Sheep_Transportation)
 
-#### GPS / LTE
+![](../images/ppg-sheep.PNG)
+
+- For convenient wearing and high reliability PPG sensor type is better.
+- They measure pulse and blood oxygen saturation by using sheep tissue to cause different light transmittance when the blood vessels beat.
+- The heart rate sensor is composed of light source (they use green LED because the absorption characteristics of hemoglobin.) and photoelectric converter.
+- They emitted green LED captured light signal then converted into an electrical signal, amplified, and outputted
+
+> *Since this method works on animals like sheep, which have thick fur, as well as dogs and cats, it is an interesting method to use.* 
+
+#### **Structure of PPG Heart Rate Sensor**
+![](../images/ppg-sheep-2.PNG)
+
+- LED Chip AM2520 (Green)
+- Optical Receiver Chip APDS-9008
+- Electrical Signal Amplifier
+
+
+
+### GPS / LTE
 
 (Which ISP to use?, what is the mode of connection?, how much data need to passed on this?)
 
 SIM7080G NB-IoT / Cat-M / GNSS (This can also provide GPS)
 
 
-#### Microphone
+### Microphone
 
 (Bitrate, Sampling rate?)
 
@@ -44,7 +63,7 @@ Interesting Link
 - https://www.quora.com/What-is-the-vocal-range-of-cats-by-frequency
 
 
-#### Processor
+### Processor
 ![](../images/pico.jpg)
 
 Raspberry Pico could be our initial processor for the prototype. (why??)
@@ -53,11 +72,28 @@ Raspberry Pico could be our initial processor for the prototype. (why??)
 [Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 
 
-#### Battery
+### Battery
 
-(why lithium??)
+**Lithium Polymer (LiPo)** Battery type.
 
-2 YDL 3.7V 1000mAh 503450 Lipo Battery Rechargeable Lithium Polymer
+**Advantages**
+- LiPo battery is flexible and can be manufactured in various shapes and size, This flexibility makes them suitable for applications where space is limited.
+- High energy density meaning they can store more energy in a given volume or weight.
+
+> *Since our collar must be small, lightweight and space is limited. From the advantages of LiPo batteries that can hold a lot of energy and can change shape Therefore it seems like a good option to use.*
+
+**The battery model we are interested in**
+
+![](../images/lipo-bat.jpg)
+- **YDL 3.7V 1000mAh 503450 Lipo Battery Rechargeable Lithium Polymer x 2**
+    - Voltage: DC 3.7V; Capacity: 1000mAh
+    - Material: Lithium Polymer; Net Weight: 22g
+    - Size: 50 x 34 x 6mm / 1.97" x 1.34" x 0.24" (LWT)
+
+- Power assumption
+    > todo!()
+
+> *This batteries can supply our collar's sensors for at least 24hrs.*
 
 ## Software Requirements 
 - Can use MQTT to send the data to the server every 5 minutes. (QOS 1, at least once)
