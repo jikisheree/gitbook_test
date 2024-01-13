@@ -354,4 +354,4 @@ e.g. `collar/cat/fed38152-6595-48c1-aaea-ebc0d937a19d` and the payload will look
    heartrate: HeartRate[]   // every 10s heartrate with timestamp
 }
 ```
-Then we will publish this to the broker every 5 minutes using Qos 1 (at least once).
+Then we will publish this to the broker every 5 minutes using QOS 1 (at least once).
