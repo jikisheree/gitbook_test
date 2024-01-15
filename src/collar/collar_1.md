@@ -81,8 +81,13 @@ Uploading datas from Collar's sensors to Data Center.
 - GPS Position updates every 5 minutes
 - GPS Position Data Usage (per day) = 50B * 288 = 14.4 KB
 
-- Accelerometer? `todo!()`
-- Battery? `todo!()`
+**Accelerometer**
+
+`todo!()`
+
+**Battery**
+
+`todo!()`
 
 **Summary Data Usage Assumption**
 
@@ -186,20 +191,20 @@ The Raspberry Pi Pico is a microcontroller board, and its features are tailored 
 
 **Power assumption**
 
-- Raspberry Pi Pico consume 90mA (Active)
-- Accelerometer/Gyro Module consume 5mA (Active)
-- Voice Sound Detection Sensor Module consume 10mA (Active)
-- Voice Recorder Module consume 35mA (Active)
-- SIM7080G NB-IoT / Cat-M / GNSS consume 350mA (Active)
-- PPG Heart Rate Sensor consume 5mA (Active)
-- Sleep mode consume 100mA (Sleep)
+- Raspberry Pi Pico: ~50mA (Active), 
+- Accelerometer/Gyro Module: ~4mA (Active)
+- Voice Sound Detection Sensor Module: ~5mA (Active)
+- Voice Recorder Module: 15mA (Active)
+- SIM7080G NB-IoT / Cat-M / GNSS: 15mA (Active)
+- PPG Heart Rate Sensor: 5mA (Active)
+- Sleep mode (PICO/SIM/GPS): 30mA (Sleep)
 
-\\( P_{\text{active}} = 90 + 5 + 10 + 35 + 350 + 5 = 495 \ \text{mA} \\) and \\( P_{\text{sleep}} = 100 \ \text{mA} \\)
+\\( P_{\text{active}} = 50 + 4 + 5 + 15 + 15 + 5 = 94 \ \text{mA} \\) and \\( P_{\text{sleep}} = 30 \ \text{mA} \\)
 
-\\( T_{\text{active}} = 0.3 \\) (30% active time) and \\( T_{\text{sleep}} = 0.7 \\) (70% sleep time)
+\\( T_{\text{active}} = 0.8 \\) (80% active time) and \\( T_{\text{sleep}} = 0.2 \\) (20% sleep time)
 
 \\[ \text{Average Power Consumption} = (P_{\text{active}} \times T_{\text{active}}) + (P_{\text{sleep}} \times T_{\text{sleep}}) \\]
-\\[ \text{Average Power Consumption} = (495 \ \text{mA} \times 0.3) + (100 \ \text{mA} \times 0.7) \\]
+\\[ \text{Average Power Consumption} = (94 \ \text{mA} \times 0.8) + (30 \ \text{mA} \times 0.2) \\]
 
 Now, calculate the battery life:
 
@@ -207,11 +212,11 @@ Now, calculate the battery life:
 
 Substitute the given values and adjust for two batteries:
 
-\\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{(0.3 \times 495 \ \text{mA} + 0.7 \times 100 \text{mA})} \\]
+\\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{(0.8 \times 94 \ \text{mA} + 0.2 \times 30 \text{mA})} \\]
 
-\\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{218 \ \text{mA}} \approx 10 \ \text{hours} \\]
+\\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{81.2 \ \text{mA}} \approx 24.6 \ \text{hours} \\]
 
-> *ทำไงดี แบตแค่ 2 ก้อนไม่น่ารอด Which include of power saving mode these batteries can supply our collar's sensors for at least 24hrs.*
+> *Which include of power saving mode these batteries can supply our collar's sensors for at least 24hrs.*
 
 <br>
 
