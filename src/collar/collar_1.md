@@ -44,9 +44,50 @@ From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/
 
 ### GPS / LTE
 
-(Which ISP to use?, what is the mode of connection?, how much data need to passed on this?)
-
 SIM7080G NB-IoT / Cat-M / GNSS (This can also provide GPS)
+
+**Specs**
+
+- SIM Card 1x slot
+- GNSS positioning (GPS, GLONASS, BeiDou, and Galileo)
+- Data rate
+    - Cat-M (LTE-M): Uplink 1,119 Kbps, Downlink: 589 Kbps
+    - NB-IoT: Uplink 150 Kbps, Downlink: 136 Kbps
+
+**SIM Provider in Thailand**
+
+![](../images/sim-provider.PNG)
+
+#### Data usage Assumption (1 Collar in 1 Day)
+
+Uploading datas from Collar's sensors to Data Center.
+
+**Voice** 
+
+- Voice record length 10 seconds + MQTT Struct = ~70 KB
+- Around 10 Voice records upload per day
+- Voice Data Usage (per day) = 70KB x 10 = ~700 KB
+
+
+**Heart Rate**
+
+- Heart rate payload + MQTT Struct = ~20 Bytes
+- Heart rate data updates every 10 seconds
+- Heart rate Data Usage (per day) = 20B x 8,640 = ~172 KB
+
+**GPS Position**
+
+- GPS Position payload + MQTT Struct = ~50 Bytes
+- GPS Position updates every 5 minutes
+- GPS Position Data Usage (per day) = 50B * 288 = 14.4 KB
+
+- Accelerometer? `todo!()`
+- Battery? `todo!()`
+
+**Summary Data Usage Assumption**
+
+- `todo!()`
+
 
 <br>
 
