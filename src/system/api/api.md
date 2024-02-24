@@ -365,7 +365,7 @@ We will use "Fan-In" pattern as stated on this
 [article](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/mqtt-communication-patterns.html#fan-in)
 from AWS.
 
-![fan-in](../images/many-to-one-fan-in.png)
+![fan-in](../../images/many-to-one-fan-in.png)
 
 Collar will have this topic schema `collar/{cat | dog}/{deviceId}` 
 e.g. `collar/cat/fed38152-6595-48c1-aaea-ebc0d937a19d` and the payload will look like this
