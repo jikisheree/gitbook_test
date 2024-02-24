@@ -104,13 +104,13 @@ For recording pet's voice then send to ML server to classified pet's emotional.
 
 **Voice Sound Detection Sensor Module**
 
-<p style="text-align: center;"><img src="../images/voice-trg.jpg" width="250"></p>
+<p style="text-align: center;"><img src="../../images/voice-trg.jpg" width="250"></p>
 
 This is for triggering the voice recorder module for recording pet's voice, Since We don't want to record all the time.
 
 **Fermion: Voice Recorder Module**
 
-<p style="text-align: center;"><img src="../images/voice-mod.jpg" width="250"></p>
+<p style="text-align: center;"><img src="../../images/voice-mod.jpg" width="250"></p>
 
 This is the voice recorder module for recording pet's voice.
 
@@ -140,7 +140,7 @@ For tracking pet's activity, movement.
 
 **Accelerometer/Gyro Module (MPU6050)**
 
-<p style="text-align: center;"><img src="../images/mpu6050.jpg" width="250"></p>
+<p style="text-align: center;"><img src="../../images/mpu6050.jpg" width="250"></p>
 
 **Specs**
 
@@ -181,7 +181,7 @@ The Raspberry Pi Pico is a microcontroller board, and its features are tailored 
 
 **The battery model we are interested in**
 
-<p style="text-align: center;"><img src="../images/lipo-bat.jpg" width="250"></p>
+<p style="text-align: center;"><img src="../../images/lipo-bat.jpg" width="250"></p>
 
 - **YDL 3.7V 1000mAh 503450 Lipo Battery Rechargeable Lithium Polymer x 2**
     - Voltage: DC 3.7V; Capacity: 1000mAh
