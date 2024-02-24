@@ -61,6 +61,11 @@ interface Communities {
 - Event is also a post, we can get only the events by specify `isEvent=true`
 
 ```typescript
+interface Comment {
+    owner: string,
+    content: string
+}
+
 interface EventPost {
     owner: string
     images?: string[] // URL of the image 
@@ -68,6 +73,8 @@ interface EventPost {
     description: string
     joined: number
     datetime: DateTime
+    shared: number
+    comments: Comment[]
 }
 
 interface Post {
@@ -76,6 +83,8 @@ interface Post {
     header: string
     description: string
     likes: number
+    shared: number
+    comments: Comment[]
 }
 
 interface Posts {
@@ -173,6 +182,20 @@ interface UpdatePost {
     datetime?: DateTime // only use this if isEvent is true
 }
 ```
+
+`POST /api/posts/{id}/like` for liking a post
+
+`POST /api/posts/{id}/share` for sharing a post to their own feed
+
+`POST /api/posts/{id}/comment` for commenting a post
+
+```
+interface NewComment {
+    owner: string,
+    content: string
+}
+```
+
 
 ### Pet API
 
@@ -354,4 +377,4 @@ e.g. `collar/cat/fed38152-6595-48c1-aaea-ebc0d937a19d` and the payload will look
    heartrate: HeartRate[]   // every 10s heartrate with timestamp
 }
 ```
-Then we will publish this to the broker every 5 minutes using Qos 1 (at least once).
+Then we will publish this to the broker every 5 minutes using QOS 1 (at least once).

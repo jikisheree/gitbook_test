@@ -5,3 +5,6 @@ multilingual = false
 src = "src"
 title = "PettySync Report"
 description = "PettySync's online report."
+
+[output.html]
+mathjax-support = true
