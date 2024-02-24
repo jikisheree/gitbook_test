@@ -69,7 +69,7 @@ Reference | https://www.cisco.com/c/en/us/products/collateral/interfaces-modules
 Ports | 24 ports full PoE+ (8 mGig ports up to 10G, 16 ports up to 1G)
 Switching capacity |  352 Gbps
 Price | 120,000 BAHT
-AMOUNT | 12
+Amount | 12
 Reference | https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html
 
 <p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/cisco-cbs220-24t-4x-eu-1.jpg" ></p>
@@ -81,7 +81,7 @@ Port Configuration | 24 ports (1 Gigabit Ethernet)
 Additional Ports | 4 ports 10 Gigabit Ethernet ports (4X)
 Power over Ethernet (PoE) | Supports PoE+ (Power over Ethernet Plus)
 Price | 14,200 BAHT
-AMOUNT | 13
+Amount | 13
 Reference | https://www.cisco.com/c/en/us/products/collateral/switches/business-220-series-smart-switches/datasheet-c78-744915.html
 
 
@@ -99,7 +99,7 @@ Power Consumption	| 25.5W
 Dimensions (W x D x H) | 9.17 x 9.17 x 1.58 in.
 Weight | 1.71 kg
 Price | 9,500 BAHT
-AMOUNT | 22
+Amount | 22
 Reference |https://itk.co.th/access-point/cisco-access-point/cisco-aironet/c9105axi-ewc-s
 
 <p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/AIR-CT3504-K9.jpg" ></p>
@@ -116,7 +116,7 @@ Power | AC 120/230 V (50/60 Hz)
 Dimensions (WxDxH) | 4.394 cm x 34.13 cm x 21.59 cm
 Weight | 2 kg
 Price | 75,000 BAHT
-AMOUNT | 1
+Amount | 1
 Reference |https://itk.co.th/access-point/cisco-access-point/cisco-wireless-controller/air-ct3504-k9
 
 <p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/Fortinet FortiGate 120G.jpg" ></p>
@@ -128,7 +128,7 @@ Ports |Gigabit Ethernet 20 Ports ¦ 10 Gigabit Ethernet 4 Ports
 Firewall Throughput | (1518 / 512 / 64 byte UDP packets): 39 / 39 / 28 Gbps
 IPsec VPN Throughput (512 byte)| 35 Gbps
 Price | 165,500 BAHT
-AMOUNT | 3
+Amount | 3
 Reference | https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-120g-series.pdf
 
 # TOTAL COST
