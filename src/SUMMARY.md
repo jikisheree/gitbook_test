@@ -1,28 +1,21 @@
 # Summary
-
 [Introduction](./introduction.md)
 
-# UI/UX
-- [UI/UX Design](./ui-ux/uiux_1.md)
-    - [UI/UX Live Demo](./ui-ux/uiux_live_demo.md)
+# SOFTWARE
+- [UX/UI DESIGN](./software/uxui/uxui.md)
+- [MACHINE LEARNING DESIGN](./software/ml/ml.md)
+- [DATABASE](./software/database/database.md)
 
-# Database
-- [Database Design](./database/database_1.md)
-    - [Database Schema](./database/database_schema.md)
+# SYSTEM
+- [SYSTEM DESIGN](./system/design/design.md)
+- [SERVICE/API DESIGN](./system/api/api.md)
+- [COLLAR & IOT](./system/collar/collar.md)
+- [CLOUD](./system/cloud/cloud.md)
+    - [AWS](./system/cloud/aws.md)
 
-# Network
-- [Network Design](./network/network_1.md)
-    - [Network Topology](./network/network_topology.md)
-    - [Network Configs](./network/network_configs.md)
-- [Floorplan Design](./network/network_2.md)
+# NETWORK
+- [FLOORPLAN](./network/floorplan/floorplan.md)
+- [NETWORK DESIGN](./network/design/design.md)
+- [NETWORK DEVICE](./network/device/device.md)
+- [ON-PREM DATACENTER](./network/datacenter/datacenter.md)
 
-# Machine Learning
-- [ML Design](./machine-learning/ml_1.md)
-- [Dataset](./machine-learning/ml_data.md)
-
-# Collar
-- [Collar Design](./collar/collar_1.md)
-    - [Sensors Detail](./collar/collar_sensor.md)
-
-# API 
-- [API Design](./api/api.md)
