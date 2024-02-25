@@ -1,5 +1,6 @@
 # Summary
-[Introduction](./introduction.md)
+[🐶 PettySync](./introduction.md)
+[🧑‍🤝‍🧑 Team Members](./members.md)
 
 # SOFTWARE
 - [UX/UI DESIGN](./software/uxui/uxui.md)
