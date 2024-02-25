@@ -18,4 +18,5 @@
 - [NETWORK DESIGN](./network/design/design.md)
 - [NETWORK DEVICE](./network/device/device.md)
 - [ON-PREM DATACENTER](./network/datacenter/datacenter.md)
+    - [DATACENTER DEVICE](./network/datacenter/device.md)
 
