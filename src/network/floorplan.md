@@ -13,7 +13,7 @@ Floorplans of PettySync's Headquarter and branch.
 </div>
 
 ### <p style="text-align: center; italic;">Headquarter Floor 1</p>
-![headquarter floor-1 plan image](../../images/floorplan/HQ1-Sectioned.png)
+![headquarter floor-1 plan image](../images/floorplan/HQ1-Sectioned.png)
 *<p style="text-align: center;">Headquarter Floor 1 Plan</p>*
 
 The first floor of headquarter is divided into **six** sections:
@@ -31,7 +31,7 @@ The first floor of headquarter is divided into **six** sections:
     - General guest reception area.
 
 ### <p style="text-align: center; italic;">Headquarter Floor 2</p>
-![headquarter floor-2 plan image](../../images/floorplan/HQ2-Sectioned.png)
+![headquarter floor-2 plan image](../images/floorplan/HQ2-Sectioned.png)
 *<p style="text-align: center;">Headquarter Floor 2 Plan</p>*
 
 The second floor of headquarter is divided into **four** sections:
@@ -45,7 +45,7 @@ The second floor of headquarter is divided into **four** sections:
     - For Supports working together and relaxing for employees in every department.
 
 ### <p style="text-align: center; italic;">Branch</p>
-![branch plan image](../../images/floorplan/BR-Sectioned.png)
+![branch plan image](../images/floorplan/BR-Sectioned.png)
 *<p style="text-align: center;">Branch Floorplan</p>*
 
 The branch floorplan is divided into **four** sections:
