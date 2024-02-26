@@ -1,8 +1,26 @@
-# NETWORK DEVICE
+# Network Devices
+List of network equipment used in the headquarter and branch.
 
-# Core Router
+<div class="warning">
 
-<p style="text-align: center; "><img  src="../../images/networkdevice/asr1002-x.jpg" width="1000"></p>
+**Section**
+
+- [Core Router](#core-router)
+- [Distribution Switch](#distribution-switch)
+- [Access Switch](#access-switch)
+- [Access Point](#access-point)
+- [WLAN Controller](#wlan-controller)
+- [Firewall](#firewall)
+- [Devices Total Cost](#devices-total-cost)
+
+
+</div>
+
+## Core Router
+
+<p style="text-align: center; "><img  src="../../images/networkdevice/asr1002-x.jpg" width="360"></p>
+
+*<p style="text-align: center;">Cisco ASR 1002-X</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -23,7 +41,9 @@ Price | 35,000 BAHT
 Amount | 3
 Reference | https://www.andovercg.com/datasheets/cisco-asr1000-aggregation-routers-2.pdf
 
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/asr1002-sip40.jpg" ></p>
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/asr1002-sip40.jpg" ></p>
+
+*<p style="text-align: center;">Cisco ASR1000-SIP40 (Upgrade Shared Port Adapter Interface Processor for Cisco ASR 1002-X)</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -40,7 +60,9 @@ Price | 33,700 BAHT
 Amount | 3
 Reference | https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.html
 
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/spa-1x10ge.jpg" ></p>
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/spa-1x10ge.jpg" ></p>
+
+*<p style="text-align: center;">SPA-1X10GE-L-V2 (Shared Port Adapter for Cisco ASR1000-SIP40)</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -60,19 +82,27 @@ Price | 5,500 BAHT
 Amount | 12
 Reference | https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/shared-port-adapters-spa-interface-processors/product_data_sheet0900aecd804dc62d.html
 
+## Distribution Switch
 
-# Network Devices
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/C9200-24PXG-E.jpg" ></p>
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/C9200-24PXG-E.jpg" ></p>
+
+*<p style="text-align: center;">Cisco C9200-24PXG-E</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
+Model | Cisco C9200-24PXG-E
 Ports | 24 ports full PoE+ (8 mGig ports up to 10G, 16 ports up to 1G)
 Switching capacity |  352 Gbps
+Uplink module |  Cisco C9200-NM-4X (4x 1G/10G network module)
 Price | 120,000 BAHT
-Amount | 12
+Amount | 4
 Reference | https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html
 
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/cisco-cbs220-24t-4x-eu-1.jpg" ></p>
+## Access Switch
+
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/cisco-cbs220-24t-4x-eu-1.jpg" ></p>
+
+*<p style="text-align: center;">Cisco CBS220-24T-4X-EU-1</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -84,8 +114,11 @@ Price | 14,200 BAHT
 Amount | 13
 Reference | https://www.cisco.com/c/en/us/products/collateral/switches/business-220-series-smart-switches/datasheet-c78-744915.html
 
+## Access Point
 
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/C9105AXI-H-Cisco-Catalyst-9100-WiFi-6-AP.jpg" ></p>
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/C9105AXI-H-Cisco-Catalyst-9100-WiFi-6-AP.jpg" ></p>
+
+*<p style="text-align: center;">Cisco C9105AXI-EWC-S</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -95,6 +128,7 @@ Radios |
 1|802.11n version 2.0 4x4 MIMO with four spatial streams PHY data rates up to 1.5 Gbps
 2|802.11ac 8x8 downlink MU-MIMO with eight spatial streams PHY data rates up to 3.4 Gbps
 3|802.11ax 8x8 uplink/downlink MU-MIMO with eight spatial streams PHY data rates up to 5.38 Gbps
+WLAN Controller compatible | Cisco 3504 WLAN Controller
 Power Consumption	| 25.5W
 Dimensions (W x D x H) | 9.17 x 9.17 x 1.58 in.
 Weight | 1.71 kg
@@ -102,7 +136,11 @@ Price | 9,500 BAHT
 Amount | 22
 Reference |https://itk.co.th/access-point/cisco-access-point/cisco-aironet/c9105axi-ewc-s
 
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/AIR-CT3504-K9.jpg" ></p>
+## WLAN Controller
+
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/AIR-CT3504-K9.jpg" ></p>
+
+*<p style="text-align: center;">Cisco AIR-CT3504-K9</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -119,7 +157,11 @@ Price | 75,000 BAHT
 Amount | 1
 Reference |https://itk.co.th/access-point/cisco-access-point/cisco-wireless-controller/air-ct3504-k9
 
-<p style="text-align: center; "><img style='width:1000px;' src="../../images/networkdevice/Fortinet FortiGate 120G.jpg" ></p>
+## Firewall
+
+<p style="text-align: center; "><img style='width:360px;' src="../../images/networkdevice/Fortinet FortiGate 120G.jpg" ></p>
+
+*<p style="text-align: center;">Fortinet FortiGate 120G</p>*
 
 | SPECIFICATION | DETAIL |
 :-: | -----------:
@@ -131,13 +173,14 @@ Price | 165,500 BAHT
 Amount | 3
 Reference | https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-120g-series.pdf
 
-# TOTAL COST
-<p style='font-weight:bold; font-size:32px;' >2677200 BAHT</p>
+## Devices Total Cost
 
-
-
-
-
-
-
-
+| Device | Price | Amount | Total (฿) |
+| :-: | :-: | :-: | :-: |
+| Core Router (upgraded) | 90,700 | 3 | 272,100 |
+| Distribution Switch | 120,000 | 4 | 480,000 |
+| Access Switch | 14,200 | 13 | 184,600 |
+| Access Point | 9,500 | 22 | 209,000 |
+| WLAN Controller | 75,000 | 1 | 75,000 |
+| Firewall | 165,500 | 3 | 496,500 |
+|  |  |  | 1,717,200 |

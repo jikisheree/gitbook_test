@@ -8,3 +8,5 @@ description = "PettySync's online report."
 
 [output.html]
 mathjax-support = true
+default-theme = "light"
+preferred-dark-theme = "light"
