@@ -10,10 +10,10 @@
 
 # SYSTEM
 - [SYSTEM DESIGN](./system/design/design.md)
+    - [HIGH LEVEL DESIGN](./system/design/high_level_design.md)
+    - [CLOUD SERVICES](./system/design/cloud.md)
 - [SERVICE/API DESIGN](./system/api/api.md)
 - [COLLAR & IOT](./system/collar/collar.md)
-- [CLOUD](./system/cloud/cloud.md)
-    - [AWS](./system/cloud/aws.md)
 
 # NETWORK
 - [FLOORPLAN](./network/floorplan.md)
