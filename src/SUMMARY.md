@@ -4,7 +4,8 @@
 
 # SOFTWARE
 - [UX/UI DESIGN](./software/uxui/uxui.md)
-- [MACHINE LEARNING DESIGN](./software/ml/ml.md)
+- [MACHINE LEARNING DESIGN](./software/ml/ml_design.md)
+    - [MACHINE LEARNING PIPELINE](./software/ml/ml_pipeline.md)
 - [DATABASE](./software/database/database.md)
     - [DATABASE SCHEMA](./software/database/database_schema.md)
 
