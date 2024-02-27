@@ -1,4 +1,14 @@
-# ON-PREM DATACENTER
+# On-Prem Datacenter
+
+<div class="warning">
+
+**Section**
+
+- [Functions](#functions)
+- [Data Server Estimation](#data-server-estimation)
+- [Specification](#specification)
+
+</div>
 
 ## Functions
 - **Web Server**: The web server is used to host the company's website and web applications.
@@ -18,3 +28,14 @@
 - **Employee Data**: The employee data requires about 20GB per user.
 - **Summary**: The summary of the data server estimation is about 2.2TB.
 
+## Specification
+
+- **Availability** 99.9% (3 nines) downtime 8.76 hours/year
+
+**Data Protection** 
+- **RAID-5**
+    - Hard drives: 5x 2.4TB Hard drive
+    - Total Usable Capacity: 9.6TB
+    - Protection: 2.4TB
+    - Speed gain: 4x read speed, no write speed gain
+    - Fault tolerance: 1-drive failure

@@ -25,5 +25,5 @@
     - [NETWORK DEVICES](./network/design/device.md)
 - [ON-PREM DATACENTER](./network/datacenter.md)
     - [NETWORK FOR DATACENTER](./network/datacenter/networkfordatacenter.md)
-    - [DATACENTER DEVICE](./network/datacenter/device.md)
+    - [DATACENTER DEVICES](./network/datacenter/device.md)
 

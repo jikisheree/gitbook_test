@@ -1,5 +1,9 @@
-# COLLAR & IOT
-## Basic Requirements
+# Collar & IoT
+Devices and sensors used in collars.
+
+## Collar Requirements
+
+**Hardware**
 
 We want a small box that will be attached to the dog or cat collar. So
 
@@ -9,18 +13,27 @@ We want a small box that will be attached to the dog or cat collar. So
 - Every sensors will be integrated into the box. (We need to build a custom PCB)
 - Waterproof
 
-## Sensor Specs
+**Software**
+
+- Can use MQTT to send the data to the server every 5 minutes. (QOS 1, at least once)
+- Trigger the microphone to record the sound when there's a sound that exceed the threshold
+- Store the GPS data every 5 minutes.
+- Store the heart rate data every 10 seconds.
+- Can go in power save mode, when the pet is lost (only sending GPS data)
+
+## Sensors
+
 
 ### Heart Rate
 From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/2015/01/ecg-vs-ppg-for-heart-rate-monitoring-which-is-best/)
 - **PPG (photoplethysmography) use a light-based technology to sense the rate of blood flow.**
 - ECG (electrocardiography) measure the electric signal generated from the heart.
 
-#### **Dealing with Dog and Cat fur**
+**Dealing with Dog and Cat fur**
 
-**from this** [**Research | IoT for Living Sheep.**](https://www.researchgate.net/publication/332477439_WSMS_Wearable_Stress_Monitoring_System_based_on_IoT_Multi-Sensor_Platform_for_Living_Sheep_Transportation)
+from this [Research | IoT for Living Sheep.](https://www.researchgate.net/publication/332477439_WSMS_Wearable_Stress_Monitoring_System_based_on_IoT_Multi-Sensor_Platform_for_Living_Sheep_Transportation)
 
-![](../images/ppg-sheep.PNG)
+![](../../images/ppg-sheep.PNG)
 
 - For convenient wearing and high reliability PPG sensor type is better.
 - They measure pulse and blood oxygen saturation by using sheep tissue to cause different light transmittance when the blood vessels beat.
@@ -30,7 +43,7 @@ From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/
 > *Since this method works on animals like sheep, which have thick fur, as well as dogs and cats, it is an interesting method to use.* 
 
 #### **Structure of PPG Heart Rate Sensor**
-![](../images/ppg-sheep-2.PNG)
+![](../../images/ppg-sheep-2.PNG)
 
 - LED Chip AM2520 (Green)
 - Optical Receiver Chip APDS-9008
@@ -43,7 +56,9 @@ From this [Article | ECG vs PPG for heart rate monitoring](https://neurosky.com/
 
 ### GPS / LTE
 
-SIM7080G NB-IoT / Cat-M / GNSS (This can also provide GPS)
+**SIM7080G** NB-IoT / Cat-M / GNSS (This can also provide GPS)
+
+<p style="text-align: center; "><img style='width:250px;' src="../../images/collarsensor/sim7080g.jpg" ></p>
 
 **Specs**
 
@@ -55,7 +70,7 @@ SIM7080G NB-IoT / Cat-M / GNSS (This can also provide GPS)
 
 **SIM Provider in Thailand**
 
-![](../images/sim-provider.PNG)
+![](../../images/sim-provider.PNG)
 
 #### Data usage Assumption (1 Collar in 1 Day)
 
@@ -79,19 +94,6 @@ Uploading datas from Collar's sensors to Data Center.
 - GPS Position payload + MQTT Struct = ~50 Bytes
 - GPS Position updates every 5 minutes
 - GPS Position Data Usage (per day) = 50B * 288 = 14.4 KB
-
-**Accelerometer**
-
-`todo!()`
-
-**Battery**
-
-`todo!()`
-
-**Summary Data Usage Assumption**
-
-- `todo!()`
-
 
 <br>
 
@@ -121,15 +123,6 @@ This is the voice recorder module for recording pet's voice.
 - Storage: 16MB
 - Support about 40 minutes voice recording
 
-Interesting Link
-- High Sensitive Microphone Module
-- Fermion: Voice Recorder Module 
-- [Electro-magnetic microphone (MEM)](https://youtu.be/wQkrD2D-XFA?si=1bjIS1xrrbElS7r1)
-- https://academic.oup.com/cz/article/67/2/165/5892256
-- https://www.lsu.edu/deafness/HearingRange.html
-- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7000907/#:~:text=Cat%20vocalizes%20to%20communicate%20with,contains%20more%20types%20of%20vocalizations.
-- https://www.quora.com/What-is-the-vocal-range-of-cats-by-frequency
-
 <br>
 
 >
@@ -157,7 +150,7 @@ For tracking pet's activity, movement.
 
 **Raspberry Pi Pico**
 
-![](../images/pico.jpg)
+<p style="text-align: center;"><img src="../../images/pico.jpg" width="250"></p>
 
 The Raspberry Pi Pico is a microcontroller board, and its features are tailored towards specific use cases where a compact, low-cost, and power-efficient solution is required.
 
@@ -216,15 +209,3 @@ Substitute the given values and adjust for two batteries:
 \\[ \text{Battery Life (hours)} = \frac{2000 \ \text{mAh}}{81.2 \ \text{mA}} \approx 24.6 \ \text{hours} \\]
 
 > *Which include of power saving mode these batteries can supply our collar's sensors for at least 24hrs.*
-
-<br>
-
->
-<!-- ^ This is for end line beautifully. -->
-
-## Software Requirements 
-- Can use MQTT to send the data to the server every 5 minutes. (QOS 1, at least once)
-- Trigger the microphone to record the sound when there's a sound that exceed the threshold
-- Store the GPS data every 5 minutes.
-- Store the heart rate data every 10 seconds.
-- Can go in power save mode, when the pet is lost (only sending GPS data)
