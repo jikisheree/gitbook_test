@@ -1,8 +1,14 @@
 # USER INTERFACE SECTION SUMMARY
 
-| Login/Register | Settings |
-| ----------- | ----------- |
-| ![alt text](../../images/datacenterdevice/R750.jpg) | ![alt text](../../images/datacenterdevice/R750.jpg) |
+| Login/Register |
+| ----------- |
+| ![alt text](../../images/ux-xui/login.png)|
+
+<br>
+
+| Settings |
+| ----------- |
+| ![alt text](../../images/ux-xui/setting.png)| 
 
 <br>
 
