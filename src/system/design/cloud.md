@@ -24,9 +24,10 @@ The above diagram shows the cloud services used for the mobile application. Each
 ![Diagram showing cloud services used in microservices responsible for the pet collar device](./img/collar-cloud.png)
 
 1. **AWS IoT Core**: Used to connect the pet collar and IoT devices to the cloud. It provides a secure and reliable connection between the devices and the cloud. The devices can send the data to the cloud and receive the commands from the cloud through the MQTT protocol.
-2. **AWS Lambda**: Used to run the code to process the data received from the pet collar and IoT devices. 
-   1. `Dumper #1` processes the data received from the pet collar and stores it in the Mongo DB TimeSeries database.
+2. **AWS Lambda**: Used to run the code to process the data received from the pet collar. 
+   1. `Dumper #1` validates and processes the data received from the pet collar and stores it in the Mongo DB TimeSeries database.
    2. `Dumper #2` is scheduled to retrieve the data from the TimeSeries database and stores it in the Amazon S3 for long-term storage. The old data is deleted from the TimeSeries database to save the storage space.
+   3. `Hearrate`, `Move`, `Location` functions query data from the MongoDB and process it to be able to show on the application UI then store the processed data in the database.
 3. **AWS EC2**: It is a virtual machine used to host MongoDB TimeSeries database.
 4. **Amazon S3**: Used to store the data received from the pet collar and IoT devices for long-term storage. In the future, we can use the old data from the Amazon S3 for the historical analysis, reporting, and machine learning.
 5. **Amazon EventBridge** (Not shown in diagram): Used to schedule AWS Lambda functions to run at a specific time to perform the required tasks.
