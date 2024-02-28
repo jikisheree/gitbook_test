@@ -15,6 +15,8 @@
 # SYSTEM
 
 - [SYSTEM DESIGN](./system/design/design.md)
+  - [HIGH LEVEL DESIGN](./system/design/high_level_design.md)
+  - [CLOUD SERVICES](./system/design/cloud.md)
 - [SERVICE/API DESIGN](./system/api/api.md)
 - [COLLAR & IOT](./system/collar/collar.md)
 - [CLOUD](./system/cloud/cloud.md)
@@ -32,3 +34,5 @@
 - [ON-PREM DATACENTER](./network/datacenter.md)
   - [NETWORK FOR DATACENTER](./network/datacenter/networkfordatacenter.md)
   - [DATACENTER DEVICE](./network/datacenter/device.md)
+    - [NETWORK FOR DATACENTER](./network/datacenter/networkfordatacenter.md)
+    - [DATACENTER DEVICES](./network/datacenter/device.md)
