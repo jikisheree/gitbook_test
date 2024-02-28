@@ -8,7 +8,7 @@
 - [UX/UI DESIGN](./software/uxui/figma-frame.md)
   - [USER INTERFACE SECTION OVERVIEW](./software/uxui/ui-section.md)
   - [USER FLOW](./software/uxui/userflow.md)
-- [MACHINE LEARNING DESIGN](./software/ml/ml.md)
+- [MACHINE LEARNING DESIGN](./software/ml/ml_design.md)
 - [DATABASE](./software/database/database.md)
   - [DATABASE SCHEMA](./software/database/database_schema.md)
 
