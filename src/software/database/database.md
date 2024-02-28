@@ -1,10 +1,10 @@
 # Database Design
 ## PostgreSQL
-![example image](../../images/postgresql.png)
+![example image](../../images/database/postgresql.png)
 
 PostgreSQL is an advanced, enterprise-class open-source relational database that supports both SQL (relational) and JSON (non-relational) querying. It is a highly stable database management system backed by more than 20 years of community development.
 
-## InfluxDB
-![example image](../../images/influxdb.png)
+## MongoDB
+![example image](../../images/database/mongodb.png)
 
-InfluxDB is an open-source time series database (TSDB) developed by InfluxData. It is optimized for fast, high-availability storage and retrieval of time series data in fields such as operations monitoring, application metrics, IoT sensor data, and real-time analytics.
+MongoDB is a source-available, cross-platform, document-oriented database. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc., and current versions are licensed under the Server Side Public License (SSPL). MongoDB is currently the 5th most popular database engine.
