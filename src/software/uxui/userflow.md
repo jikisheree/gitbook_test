@@ -29,7 +29,7 @@ This page will describe how our users can use the PettyRync mobile application i
 
 ## COMMUNITY🏠
 
-![alt text](../../images/ux-xui/commu1.png)
+![alt text](../../images/ux-xui/feg.png)
 
 > The second part of the application is the community system, consisting of feed, groups and events related to pets. In a group, one can create posts to share information among group members.
 
