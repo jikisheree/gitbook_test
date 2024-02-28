@@ -1,40 +1,45 @@
 # ⭐️ USER INTERFACE SECTION SUMMARY    
 
+# USER INTERFACE SECTION SUMMARY
+
 | Login/Register |
 | ----------- |
-| ![alt text](../../images/ux-xui/login.png)|
-
-<br>
-
-| Settings |
-| ----------- |
-| ![alt text](../../images/ux-xui/setting.png)| 
+| ![alt text](<../../images/ux-xui/Pasted Graphic 24.png>) |
 
 <br>
 
 | Community |
 | ----------- |
-| ![alt text](../../images/datacenterdevice/R750.jpg) | 
+| ![alt text](<../../images/ux-xui/Community.png>) |
 
 <br>
 
-| Pet Map | 
+| Pet Map |
+| ----------- |
+| ![alt text](<../../images/ux-xui/map (2).png>) |
+
+<br>
+
+| Pet profile | 
 | ----------- | 
-| ![alt text](../../images/datacenterdevice/R750.jpg) | 
+| ![alt text](<../../images/ux-xui/petprofile.png>) |
 
 <br>
 
-| Pet profile |
-| ----------- |
-| ![alt text](../../images/datacenterdevice/R750.jpg) |
+| Health & Activity | 
+| ----------- | 
+| ![alt text](<../../images/ux-xui/health.png>) |
 
-<br>
-
-| Health&Activities |
-| ----------- |
-| ![alt text](../../images/datacenterdevice/R750.jpg) |
 <br>
 
 | Notifications |
 | ----------- |
-| ![alt text](../../images/datacenterdevice/R750.jpg) |
+| ![alt text](<../../images/ux-xui/noti.png>) |
+
+<br>
+
+| Setting |
+| ----------- |
+| ![alt text](<../../images/ux-xui/Settings.png>) |
+
+<br>
