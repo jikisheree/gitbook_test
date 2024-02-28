@@ -13,3 +13,4 @@ PettySync's team members and their responsibility.
 | 630610764 | Siriwat Songwattana | Database |
 | 630610752 | Purich Seenaullae | Network Design |
 | 630610770 | Atthapong Auewongchai | Network Design |
+| 630610759 | Latthaphol Laohapiboonrattana | Network/Collar Support |
