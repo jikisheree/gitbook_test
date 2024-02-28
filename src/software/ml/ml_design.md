@@ -76,10 +76,16 @@ with  loss: 1.0762 and accuracy: 0.7020
 - Accuracy of our model on test data :  70.20202279090881 %
 
 **Accuracy **
-- Works as the bidge of Access Layer and Core Layer
+ 
 
 *<p align="center"><img width  ="800px" class="center-block" src="../../images/ml/martix.png"></p>*
-- martrix
+- Confusion matrix is a table that is used to define the performance of a classification algorithm. A confusion matrix visualizes and summarizes the performance of a classification algorithm.
 
+
+- Frome confusion matrix we can calculated 
+    - Accuracy = (TPs + TNs) / (TPs+TNs+FPs + FNs)
+    - Precision = TPs / (TPs + FPs)
+    - Recall = TPs/(TPs+FNs)
+    - F1 = 2 x (Precision x Recall)/(Precision + Recall)
 *<p align="center"><img width  ="800px" class="center-block" src="../../images/ml/recall.png"></p>*
-- recall 
+ 
