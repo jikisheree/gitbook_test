@@ -11,3 +11,4 @@ PettySync's team members and their responsibility.
 | 630610749 | Pongsakorn Rattanapan | Machine Learning Design, Pipeline |
 | 630610764 | Siriwat Songwattana | Database |
 | 630610737 | Tanat Tangun | Project Manager, System/Collar Design |
+| 630610752 | Purich Seenaullae | Network Design |
