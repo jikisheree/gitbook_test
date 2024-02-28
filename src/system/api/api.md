@@ -1,5 +1,47 @@
 # API Design
 
+
+## Post/Event Ranking 
+
+\\[ \text{score}(\text{post}) = \frac{\sqrt(1+\text{post.likes})}{1+\text{post.likes}} \times
+    \frac{\alpha\times\log(1+\text{post.likes})}{1+\log(1+\beta\times(\text{time.now}-\text{post.time}))} 
+\\]
+
+The above equation defines how we score each post, \\(\alpha\\) is how much we care about the likes and 
+\\(\beta\\) is how much we care about how recent the post is. These 2 values can be adjusted to suit 
+our needs. Below is an example of how the equation work.
+
+|Likes|Time|\\(\alpha\\)|\\(\beta\\)|Score|
+|--:|--:|--:|--:|--:|
+|0|0|2|0.85|1|
+|1|5|2|0.85|1.057109|
+|100|3600|2|0.85|0.99312|
+|10|3600|2|0.85|0.765811|
+|200|1800|2|0.85|1.171232|
+
+The post with higher score will be recommended to user.
+
+## Group Ranking 
+
+\\[( \text{score}(\text{group}) = \alpha\times\text{group.members}) 
+\times (\beta\times\text{group.recent\_acts})
+\\]
+
+The above equation defines how we score each group, \\(\alpha\\) is how much we care about the 
+amount of members in a group and 
+\\(\beta\\) is how much we care about how much recent activites a group has. 
+These 2 values can also be adjusted to suit our needs. 
+Below is an example of how the equation work.
+
+|Members|Recent Activities|\\(\alpha\\)|\\(\beta\\)|Score|
+|--:|--:|--:|--:|--:|
+|10|20|1|1.15|13|
+|1000|10|1|1.15|1015|
+|500|200|1|1.15|800|
+|900|100|1|1.15|1050|
+
+The group with higher score will be recommended to user.
+
 ## Application API
 We will use REST API for application's side API. In the following section will be the 
 draft API endpoint with a data schema if needed.
@@ -367,14 +409,42 @@ from AWS.
 
 ![fan-in](../../images/many-to-one-fan-in.png)
 
-Collar will have this topic schema `collar/{cat | dog}/{deviceId}` 
-e.g. `collar/cat/fed38152-6595-48c1-aaea-ebc0d937a19d` and the payload will look like this
+Collar will have this topic schema `collar/{cat | dog}/{deviceId}|{gps | sound | heartrate}` 
+e.g. `collar/cat/fed38152-6595-48c1-aaea-ebc0d937a19d/{gps}` and the payload will look like this
 
 ```  
+// For gps, every 5min send gps location with timestamp
 {
-   gps: GPS[]               // every 5min gps location with timestamp 
-   sound: SoundWaves[]      // the sound recorded in this period
-   heartrate: HeartRate[]   // every 10s heartrate with timestamp
+    lat,
+    long,
+    timestamp,
+}[]
+```
+```
+// For sound, send sound recorded (in byte array format) in certain period
+{
+    70 db c9 dc f4 2a 76 dc 46 47 6c fd e2 5c a6 ea 
+    f7 85 4f b7 59 aa b4 47 b3 ea 97 74 1d 23 f6 5e 
+    d7 43 c5 84 8a 4b 66 ba 46 95 fc d1 64 47 82 77 
+    2c 57 12 73 98 cf 07 57 b7 02 5e c1 aa 31 1f 23 
+    96 19 bf 23 cc 4f fa 41 e1 78 4d 0a 82 31 29 76 
+    18 43 b7 68 e7 11 52 e8 e1 8b 38 70 5a 71 ff 61 
+    3a 7e 5f e5 b5 23 87 80 7a 7c 81 48 88 36 36 db 
+    57 67 22 bd 4e c3 29 34 db 79 6a 4c c1 65 1d dc 
+    39 38 3a c4 db b1 e9 d4 ec 87 71 18 e1 68 fb 9e 
+    a4 59 04 4e c9 30 a9 ac f6 eb 36 52 f1 4a e5 df 
+    9b d6 08 9b 06 cc 8a 53 de fc ab f5 b0 53 7c 22 
+    7d f3 c8 8b 8f 92 04 43 36 cb 60 45 e6 d8 09 bd 
+    b7 6e 35 37 35 21 a6 0f ...
 }
 ```
-Then we will publish this to the broker every 5 minutes using QOS 1 (at least once).
+
+```
+// For heartrate, every 10s send heartrate with timestamp
+{
+    bpm,
+    timestamp
+}[]
+
+```
+Then we will publish this to the broker using QOS 1 (at least once).
