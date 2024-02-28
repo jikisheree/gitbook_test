@@ -6,12 +6,12 @@ This page will describe how our users can use the PettyRync mobile application i
 
 *Section*
 
-- [LOGIN & REGISTER](#login--register📝)
-- [COMMUNITY](#community🏠)
-- [PET MAP](#pet-map📍)
-- [PET PROFILE](#pet-profile🐶🐱)
-- [NOTIFICATION](#notification🛎)
-- [SETTING](#setting⚙️)
+- [LOGIN & REGISTER](#login--register)
+- [COMMUNITY](#community)
+- [PET MAP](#pet-map)
+- [PET PROFILE](#pet-profile)
+- [NOTIFICATION](#notification)
+- [SETTING](#setting)
 
 </div>
 
