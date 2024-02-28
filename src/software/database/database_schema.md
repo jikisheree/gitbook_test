@@ -1,10 +1,10 @@
 # Database Schema
 We will divide the database design into two parts: SQL and NoSQL.
 ## SQL using PostgreSQL
-![example image](../../images/database-schema.png)
+![example image](../../images/database/database-schema.png)
 
-## No SQL using InfluxDB
-![example image](../../images/nosql-schema.png)
+## No SQL using MongoDB
+![example image](../../images/database/nosql-schema.png)
 
 ### Entities
 #### User_Owner
