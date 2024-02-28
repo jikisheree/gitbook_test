@@ -26,7 +26,7 @@
 
 | Health & Activity | 
 | ----------- | 
-| ![alt text](<../../images/ux-xui/health.png>) |
+| ![alt text](<../../images/ux-xui/Frame 1454.png>) |
 
 <br>
 
