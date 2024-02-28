@@ -6,7 +6,7 @@
 # SOFTWARE
 
 - [UX/UI DESIGN](./software/uxui/figma-frame.md)
-  - [USER INTERFACE SECTION SUMMARY](./software/uxui/ui-section.md)
+  - [USER INTERFACE SECTION OVERVIEW](./software/uxui/ui-section.md)
   - [USER FLOW](./software/uxui/userflow.md)
 - [MACHINE LEARNING DESIGN](./software/ml/ml.md)
 - [DATABASE](./software/database/database.md)
