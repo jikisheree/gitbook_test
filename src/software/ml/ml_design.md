@@ -66,7 +66,7 @@ The architecture used in the Model is **Convolutional Neural Network**, with rec
 
 ![Convolutional Neural Network model](../../images/ml/model.png)
 *<p style="text-align: center;">Convolutional Neural Network model</p>*
--  with  Convolutional Neural Network model it has weight (params) total 82,972,163 parameter
+-  with  Convolutional Neural Network model it has weight total 82,972,163 parameters
     - all parameter are trainable
     
 **Training Process**
