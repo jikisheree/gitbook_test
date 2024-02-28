@@ -69,7 +69,7 @@ The architecture used in the Model is **Convolutional Neural Network**, with rec
 -  with  Convolutional Neural Network model it has weight (params) total 82,972,163 parameter
     - all parameter are trainable
     
-**Traing process**
+**Training Process**
  
 *<p align="center"><img width  ="800px" class="center-block" src="../../images/ml/train.png"></p>*
 with  loss: 1.0762 and accuracy: 0.7020
