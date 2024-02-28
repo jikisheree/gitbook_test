@@ -19,8 +19,8 @@
   - [CLOUD SERVICES](./system/design/cloud.md)
 - [SERVICE/API DESIGN](./system/api/api.md)
 - [COLLAR & IOT](./system/collar/collar.md)
-- [CLOUD](./system/cloud/cloud.md)
-  - [AWS](./system/cloud/aws.md)
+<!-- - [CLOUD](./system/cloud/cloud.md)
+  - [AWS](./system/cloud/aws.md) -->
 
 # NETWORK
 
@@ -34,5 +34,3 @@
 - [ON-PREM DATACENTER](./network/datacenter.md)
   - [NETWORK FOR DATACENTER](./network/datacenter/networkfordatacenter.md)
   - [DATACENTER DEVICE](./network/datacenter/device.md)
-    - [NETWORK FOR DATACENTER](./network/datacenter/networkfordatacenter.md)
-    - [DATACENTER DEVICES](./network/datacenter/device.md)

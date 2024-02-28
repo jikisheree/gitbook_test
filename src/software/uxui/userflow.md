@@ -1,4 +1,4 @@
-# 📱USER FLOW 🧒🏻
+# 📱User Flow 🧒🏻
 
 This page will describe how our users can use the PettyRync mobile application in these sections as follow.
 

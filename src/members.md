@@ -6,13 +6,7 @@ PettySync's team members and their responsibility.
 
 | Student ID | Name | Responsibility | 
 | :-: | :-: | :-: |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
-| 000000000 | xxxx | xxxxxxx |
+| 630610734 | Tanadol Deachprapakorn | UI/UX Design, System Design |
+| 630610736 | Thanawat Bumpengpun | Network Design, Collar Sensors |
+| 630610749 | Pongsakorn Rattanapan | Machine Learning Design, Pipeline |
+| 630610764 | Siriwat Songwattana | Database |

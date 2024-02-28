@@ -1,4 +1,4 @@
-# CLOUD SERVICES
+# Cloud Services
 
 The PettySync services both for the community and the pet collar are hosted on the cloud. The cloud services are used to store the data, run the application, and provide the infrastructure for the application. **Amazon Web Services (AWS)** is used for the cloud services. AWS is chosen because it is the most popular cloud service provider and it provides a wide range of services that are required for the application. The development team is also familiar with AWS services.
 

@@ -1,4 +1,4 @@
-# ⭐️ USER INTERFACE SECTION OVERVIEW   
+# ⭐️ User Interface Section Overview   
 
 | Login/Register |
 | ----------- |

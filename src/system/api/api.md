@@ -392,7 +392,7 @@ interface UpdateVaccine {
 ```
 
 ### Collar API 
-From ChatGPT
+
 > MQTT, or Message Queuing Telemetry Transport, is a lightweight and open-source messaging protocol 
 > designed for efficient communication between devices in a distributed and resource-constrained network. 
 > It follows a publish-subscribe model, allowing devices to publish messages to specific topics, and other devices

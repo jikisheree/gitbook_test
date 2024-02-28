@@ -1,4 +1,4 @@
-# MACHINE LEARNING DESIGN
+# Machine Learning Design
 Overview of  machine learning and training model frame work.
 
 <!-- <div class="warning">

@@ -1,4 +1,4 @@
-# 🌈 UX/UI DESIGN
+# 🌈 UX/UI Design
 
 ## We have designed user inferfaces using FIGMA🪄
 

@@ -1,4 +1,4 @@
-# HIGH LEVEL DESIGN
+# High Level Design
 
 ## Capacity Estimation and Constraints
 
