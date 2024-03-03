@@ -37,7 +37,7 @@ In our project, we implement a comprehensive Machine Learning (ML) pipeline usin
 
 
 
-**DEPLOY Process**
+**Deploy Process**
  
 
 <p style="text-align: center;"></p> 
@@ -73,7 +73,7 @@ This corrected data serves as baseline ground truth and contributes to a new dat
 <!-- - เป็น base line โดยเราจะใช้สิ่งนี้เป็น ground truth และใช้ เป็น data set ในการ train model ใหม่ -->
  
 
-**Retrain**
+**Retrain Process**
  
 <p style="text-align: center;"></p> 
 <p align="center"><img height ="300px" class="center-block" src="../../images/ml/Pipeline_3.png"></p>
