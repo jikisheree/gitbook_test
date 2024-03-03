@@ -72,7 +72,7 @@ We use **AWS SageMaker** to build, train, and deploy machine learning models. Th
 
 Total is 7227.1 USD per month, or about 260,000 baht/month, roughly 3,000,000 baht/year. The most expensive cost is the database, especially AWS S3 for media storage and Amazon ElastiCache (REDIS)
 
-More details from AWS Pricing Calculator: https://calculator.aws/#/estimate?id=a1410261540bae4c73d5de057192bb53281671a7
+[More details from AWS Pricing Calculator](https://calculator.aws/#/estimate?id=a1410261540bae4c73d5de057192bb53281671a7)
 
 #### SageMaker Operation Cost
 
