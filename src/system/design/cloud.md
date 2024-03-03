@@ -15,7 +15,7 @@ The above diagram shows the cloud services used for the mobile application. Each
 - **Amazon S3**: Object storage used to store the images and videos.
 - **Amazon SNS**: Used to send push notifications to the mobile application and other services.
 - **Amazon SQS**: Used to decouple the services and provide a reliable and scalable message queue. This service is used to queue up new posts and events data for feed generation.
-- **Amazon Location Service**: Used to provide location-based services, maps, and pet location tracking, including real-time and historical tracking.
+- **Amazon Location Service**: Used to provide location-based services, maps, but not tracking. We do tracking using data from MongoDB. Tracking service is too expensive.
 - **Amazon Location SDK**: Used to integrate location-based services into the mobile application.
 - **REDIS**: Used to cache the data and provide a low-latency access to the frequently accessed data. This is used to cache the feed data for faster feed retrieval.    
 
