@@ -9,6 +9,7 @@
   - [USER INTERFACE SECTION OVERVIEW](./software/uxui/ui-section.md)
   - [USER FLOW](./software/uxui/userflow.md)
 - [MACHINE LEARNING DESIGN](./software/ml/ml_design.md)
+    - [MACHINE LEARNING PIPELINE](./software/ml/ml_pipeline.md)
 - [TECH STACK](./software/tech_stack.md)
 - [DATABASE](./software/database/database.md)
   - [DATABASE SCHEMA](./software/database/database_schema.md)
