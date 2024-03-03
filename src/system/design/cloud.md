@@ -15,7 +15,7 @@ The above diagram shows the cloud services used for the mobile application. Each
 - **Amazon S3**: Object storage used to store the images and videos.
 - **Amazon SNS**: Used to send push notifications to the mobile application and other services.
 - **Amazon SQS**: Used to decouple the services and provide a reliable and scalable message queue. This service is used to queue up new posts and events data for feed generation.
-- **Amazon Location Service**: Used to provide location-based services, maps, and pet location tracking, including real-time and historical tracking.
+- **Amazon Location Service**: Used to provide location-based services, maps, but not tracking. We do tracking using data from MongoDB. Tracking service is too expensive.
 - **Amazon Location SDK**: Used to integrate location-based services into the mobile application.
 - **REDIS**: Used to cache the data and provide a low-latency access to the frequently accessed data. This is used to cache the feed data for faster feed retrieval.    
 
@@ -52,7 +52,27 @@ We use **AWS SageMaker** to build, train, and deploy machine learning models. Th
    7. `is_corrected`: A flag to indicate if the mood analysis result is corrected by the user.
 4. User can access the mood analysis result from the mobile application and can correct the result if it is wrong. The corrected data is used to retrain the model.
 
-### Amazon EC2 Instances and Cost Estimation
+### Cost Estimation
+
+#### Assumptions
+
+- The cost is calculated based on the AWS pricing in the Asia Pacific (Singapore) region.
+- Daily active users: 28,000
+- Each user has a pet collar device.
+- Each collar device sends a message every 5 minutes. Message size is 182 bytes.
+- Each user uploads a post per day.
+- A post contains an image or a video of size 10 MB.
+- Assume, there are 100,000 read requests per day for each service.
+- Database utilization is almost 100%.
+- The cost of the database is calculated based on the Amazon RDS pricing for PostgreSQL database.
+- The cost of the storage is calculated based on the Amazon S3 pricing.
+- The cost of the API Gateway is calculated based on the number of requests and the data transfer out. Assume, 1 million requests per day.
+
+#### Estimated Cost
+
+Total is 7227.1 USD per month, or about 260,000 baht/month, roughly 3,000,000 baht/year. The most expensive cost is the database, especially AWS S3 for media storage and Amazon ElastiCache (REDIS)
+
+[More details from AWS Pricing Calculator](https://calculator.aws/#/estimate?id=a1410261540bae4c73d5de057192bb53281671a7)
 
 #### SageMaker Operation Cost
 
